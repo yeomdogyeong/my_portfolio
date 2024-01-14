@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "intelone-mono-font-family-regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text {
+  font-family: "intelone-mono-font-family-regular", sans-serif;
+}
+
+#stars {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#4682a9, #749bc2, #91c8e4, #fff);
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 3s ease-in-out;
+}
+
+#stars.dark-mode {
+  background: linear-gradient(#393053, #443c68, #635985);
+}
+
+.star {
+  width: 2px;
+  height: 2px;
+  background: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  animation: twinkle 2s infinite;
+}
+
+.circle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 499px;
+  height: 499px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffcd4b;
+  z-index: 1;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.text-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text {
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width 2s;
+  z-index: 1;
+  padding: 100px;
+  font-size: 50px;
+  /* width: 500px; */
+}
+
+.Typewriter__wrapper {
+  font-size: 30px;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
