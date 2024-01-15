@@ -31,7 +31,7 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
 
   return (
     <div id="stars" className={isDarkMode ? "dark-mode" : ""} ref={starRef}>
-      <div className="circle">
+      <div className={isDarkMode ? "dark-mode circle" : "circle"}>
         <div className="text-box">
           <div className="text">
             <motion.div

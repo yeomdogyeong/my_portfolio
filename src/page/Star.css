@@ -43,10 +43,15 @@
   background: #fff;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffcd4b;
+  background-color: #ffa732;
   z-index: 1;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
+
+.circle.dark-mode {
+  background-color: #ffcd4b;
+}
+
 .text-box {
   position: relative;
   display: flex;

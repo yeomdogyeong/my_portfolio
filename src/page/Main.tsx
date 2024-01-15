@@ -4,8 +4,8 @@ import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
 import yeom from "../assets/yeomsia.jpg";
 import dowajoyak from "../assets/dowajoyak.png";
-import inquery from "../assets/inquery2.png";
-import login from "../assets/login.png";
+
+import signup from "../assets/signup.png";
 import Card from "../components/card";
 import Typewriter from "typewriter-effect";
 import Star from "./Star";
@@ -13,6 +13,11 @@ import person from "../assets/person.png";
 import home from "../assets/marker2.png";
 import birth from "../assets/cake2.png";
 import letter from "../assets/mail.png";
+import petching1 from "../assets/petchinginquery.png";
+import petching2 from "../assets/petching2.png";
+import petching3 from "../assets/login.png";
+import dowajoyak2 from "../assets/dowajoyakwrite.png";
+import dowajoyak3 from "../assets/dowajoyaksearch.png";
 import About from "./About";
 import useDarkModeStore from "../zustand/darkModeStore";
 
@@ -180,7 +185,8 @@ function Main() {
         </div>
         <About />
         <div
-          className={`border-dotted border w-full ${
+          id="project"
+          className={`border-dotted border w-full m-20 ${
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>
@@ -197,7 +203,7 @@ function Main() {
             카드 전체 뒤집기
           </button>
         </div>
-        <div className="flex flex-row flex-wrap z-5 justify-center items-center w-full">
+        <div className="flex flex-row flex-wrap z-5 justify-evenly items-center w-2/3">
           <Card
             isFlipped={isFlipped}
             frontImage={dowajoyak}
@@ -211,9 +217,49 @@ function Main() {
             gitLink="https://github.com/codestates-seb/seb43_main_009"
             demoLink="https://dowajoyak.store/"
           />
+
           <Card
             isFlipped={isFlipped}
-            frontImage={login}
+            frontImage={dowajoyak2}
+            frontDescription="도와조약 CRUD"
+            description={{
+              title: "제목",
+              subtitle: "부제목",
+              tech: "# Tech : React,CSS",
+              work: "# Work : css 스타일링",
+            }}
+            gitLink="git repository 링크"
+            demoLink="Demo 링크"
+          />
+          <Card
+            isFlipped={isFlipped}
+            frontImage={dowajoyak3}
+            frontDescription="도와조약 의약품 검색"
+            description={{
+              title: "제목",
+              subtitle: "부제목",
+              tech: "# Tech : React,CSS",
+              work: "# Work : css 스타일링",
+            }}
+            gitLink="git repository 링크"
+            demoLink="Demo 링크"
+          />
+          <Card
+            isFlipped={isFlipped}
+            frontImage={petching2}
+            frontDescription="펫칭 F&Q"
+            description={{
+              title: "제목",
+              subtitle: "부제목",
+              tech: "# Tech : React,CSS",
+              work: "# Work : css 스타일링",
+            }}
+            gitLink="git repository 링크"
+            demoLink="Demo 링크"
+          />
+          <Card
+            isFlipped={isFlipped}
+            frontImage={signup}
             frontDescription="펫칭 로그인"
             description={{
               title: "제목",
@@ -226,7 +272,7 @@ function Main() {
           />
           <Card
             isFlipped={isFlipped}
-            frontImage={inquery}
+            frontImage={petching1}
             frontDescription="펫칭 문의하기"
             description={{
               title: "제목",
@@ -239,47 +285,8 @@ function Main() {
           />
           <Card
             isFlipped={isFlipped}
-            frontImage={inquery}
-            frontDescription="펫칭 문의하기"
-            description={{
-              title: "제목",
-              subtitle: "부제목",
-              tech: "# Tech : React,CSS",
-              work: "# Work : css 스타일링",
-            }}
-            gitLink="git repository 링크"
-            demoLink="Demo 링크"
-          />
-          <Card
-            isFlipped={isFlipped}
-            frontImage={inquery}
-            frontDescription="펫칭 문의하기"
-            description={{
-              title: "제목",
-              subtitle: "부제목",
-              tech: "# Tech : React,CSS",
-              work: "# Work : css 스타일링",
-            }}
-            gitLink="git repository 링크"
-            demoLink="Demo 링크"
-          />
-          <Card
-            isFlipped={isFlipped}
-            frontImage={inquery}
-            frontDescription="펫칭 문의하기"
-            description={{
-              title: "제목",
-              subtitle: "부제목",
-              tech: "# Tech : React,CSS",
-              work: "# Work : css 스타일링",
-            }}
-            gitLink="git repository 링크"
-            demoLink="Demo 링크"
-          />
-          <Card
-            isFlipped={isFlipped}
-            frontImage={inquery}
-            frontDescription="펫칭 문의하기"
+            frontImage={petching3}
+            frontDescription="펫칭 회원가입"
             description={{
               title: "제목",
               subtitle: "부제목",
@@ -290,13 +297,13 @@ function Main() {
             demoLink="Demo 링크"
           />
         </div>
-        {/* ---
         <div
-          id="skills"
-          className="flex m-4 p-4 border-2 border-gray-300 rounded-lg w-2/3 h-full"
-        >
-          이런것을 좋아합니다
-        </div> */}
+          className={`border-dotted border w-full m-20 ${
+            isDarkMode ? "" : "border-gray-400"
+          }`}
+        ></div>
+
+        <h1 id="skills">skills 준비중</h1>
       </div>
     </>
   );
