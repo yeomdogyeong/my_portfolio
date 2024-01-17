@@ -8,7 +8,7 @@ import dowajoyak from "../assets/dowajoyak.png";
 import signup from "../assets/signup.png";
 import Card from "../components/card";
 import Typewriter from "typewriter-effect";
-import Star from "./Star";
+import Star from "../components/Star";
 import person from "../assets/person.png";
 import home from "../assets/marker2.png";
 import birth from "../assets/cake2.png";
@@ -18,7 +18,7 @@ import petching2 from "../assets/petching2.png";
 import petching3 from "../assets/login.png";
 import dowajoyak2 from "../assets/dowajoyakwrite.png";
 import dowajoyak3 from "../assets/dowajoyaksearch.png";
-import About from "./About";
+import About from "../components/About";
 import useDarkModeStore from "../zustand/darkModeStore";
 
 function Main() {
@@ -120,7 +120,7 @@ function Main() {
       >
         <div className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10">
           <span
-            className={`mb-10 text-3xl ${isDarkMode ? "text-[#f6d776]" : ""}`}
+            className={`mb-10 text-5xl ${isDarkMode ? "text-[#f6d776]" : ""}`}
           >{`<ABOUT/>`}</span>
           <div className="flex items-center">
             <Typewriter
@@ -190,7 +190,7 @@ function Main() {
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>
-        <div className={`${isDarkMode ? "text-[#f6d776]" : ""} text-3xl mt-20`}>
+        <div className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}>
           {`<PROJECT />`}
         </div>
         <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full">
