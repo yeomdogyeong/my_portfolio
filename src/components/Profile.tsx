@@ -40,7 +40,7 @@ const Profile: React.FC<MyProfile> = ({ member }) => {
             <span className="flex flex-row mb-8">Birth : {data.birth}</span>
             <span className="flex flex-row mb-8">Stay : {data.stay}</span>
             <span className="flex flex-row mb-8">Email : {data.email}</span>
-            <div className="flex flex-row">
+            <div className="flex flex-row md:flex-col lg:flex-row">
               <p className="my-2 flex items-center">
                 Github :
                 <button
