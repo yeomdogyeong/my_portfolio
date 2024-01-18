@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import useDarkModeStore from "../zustand/darkModeStore";
 
-const Header = () => {
+const Header: React.FC = () => {
   const { isDarkMode, toggleDarkMode } = useDarkModeStore();
   const [isOn, setIsOn] = useState(false);
   const toggleSwitch = () => {

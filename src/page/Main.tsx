@@ -19,6 +19,7 @@ import dowajoyak2 from "../assets/dowajoyakwrite.png";
 import dowajoyak3 from "../assets/dowajoyaksearch.png";
 import About from "../components/About";
 import useDarkModeStore from "../zustand/darkModeStore";
+import Profile from "../components/Profile";
 
 function Main() {
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
@@ -48,6 +49,17 @@ function Main() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const dogyeong = [
+    {
+      name: "염도경",
+      birth: "1995.10.31",
+      stay: "서울시 강서구",
+      email: "kangs19951@gmail.com",
+      github: "https://github.com/yeomdogyeong",
+      blog: "https://velog.io/@ehrud1031/posts",
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -74,55 +86,7 @@ function Main() {
             <span>를 공부하고 있는</span>
           </div>
         </div>
-        <div
-          className={`${isDarkMode ? "bg-[#7C81AD]" : ""} ${
-            isDarkMode ? "text-gray-200" : ""
-          } ${isDarkMode ? "bg-[#4D3C77]" : ""} ${
-            isDarkMode ? "border-gray-500" : ""
-          } flex flex-col m-4 p-4 border-2 shadow-md rounded-lg w-full  md:flex-row md:w-2/3 h-full`}
-        >
-          <div className="w-full md:w-1/2">
-            <img className="rounded-3xl w-full p-6" src={yeom} alt="Ebichu" />
-          </div>
-          <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 p-6 text-2xl md:text-lg lg:text-2xl">
-            <span className="flex flex-row mb-8">
-              <img
-                src={person}
-                style={{ width: 30, height: 30 }}
-                alt="person"
-                className="mr-2"
-              />
-              염도경
-            </span>
-            <span className="flex flex-row mb-8">
-              <img
-                src={birth}
-                style={{ width: 30, height: 30 }}
-                alt="birth"
-                className="mr-2"
-              />
-              1995.10.31
-            </span>
-            <span className="flex flex-row mb-8">
-              <img
-                src={home}
-                style={{ width: 30, height: 25 }}
-                alt="person"
-                className="mr-2"
-              />
-              서울시 강서구
-            </span>
-            <span className="flex flex-row mb-8 ">
-              <img
-                src={letter}
-                style={{ width: 30, height: 25 }}
-                alt="letter"
-                className="mr-2"
-              />
-              kangs19951@gmail.com
-            </span>
-          </div>
-        </div>
+        <Profile member={dogyeong} />
         <About />
         <div
           id="project"
