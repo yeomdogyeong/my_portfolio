@@ -16,6 +16,7 @@ import dowajoyak3 from "../assets/dowajoyaksearch.png";
 import About from "../components/About";
 import useDarkModeStore from "../zustand/darkModeStore";
 import Profile from "../components/Profile";
+import Graph from "../components/Graph";
 
 function Main() {
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
@@ -202,8 +203,10 @@ function Main() {
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>
-
-        <h1 id="skills">skills 준비중</h1>
+        <div className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}>
+          {`<Skills />`}
+        </div>
+        <Graph />
       </div>
     </>
   );
