@@ -1,4 +1,4 @@
-# 도경의 포트폴리오
+# Dogyeong's Portfolio
 
 ## Introduction
 
