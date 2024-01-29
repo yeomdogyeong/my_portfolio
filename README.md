@@ -28,3 +28,7 @@
 
 - **Email:** kangs19951@gmail.com
 
+## Blog
+
+ [https://velog.io/@ehrud1031](https://velog.io/@ehrud1031)
+
