@@ -13,6 +13,11 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
     const container = starRef.current;
 
     if (container) {
+      const oldStarContainer = container.querySelector(".star-container");
+      if (oldStarContainer) {
+        container.removeChild(oldStarContainer);
+      }
+
       let starContainer = document.createElement("div");
       starContainer.className = "star-container";
       starContainer.innerHTML = "";
