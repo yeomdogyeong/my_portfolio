@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           isDarkMode ? "bg-[#635985]" : "bg-[#4682a9]"
         } p-6`}
       >
-        <div className="flex justify-between">
+        <div className="flex justify-between cursor-pointer">
           <ScrollLink
             to="about"
             smooth={true}
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
             about
           </ScrollLink>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between cursor-pointer">
           <ScrollLink
             to="project"
             smooth={true}
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             project
           </ScrollLink>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between cursor-pointer">
           <ScrollLink
             to="skills"
             smooth={true}
