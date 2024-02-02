@@ -75,7 +75,13 @@ function Main() {
           <div className="flex items-center">
             <Typewriter
               options={{
-                strings: ["React", "TypeScript", "JavaScript", "zustand"],
+                strings: [
+                  "React",
+                  "TypeScript",
+                  "JavaScript",
+                  "zustand",
+                  "Dart",
+                ],
                 autoStart: true,
                 loop: true,
                 wrapperClassName: "Typewriter__wrapper",
@@ -218,9 +224,13 @@ function Main() {
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>
-        <div className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}>
+        <div
+          id="skills"
+          className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}
+        >
           {`<Skills />`}
         </div>
+
         <Graph />
       </div>
     </>
