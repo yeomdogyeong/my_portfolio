@@ -28,12 +28,12 @@ const Profile: React.FC<MyProfile> = ({ member }) => {
         isDarkMode ? "text-gray-200" : ""
       } ${isDarkMode ? "bg-[#4D3C77]" : ""} ${
         isDarkMode ? "border-gray-500" : ""
-      } flex flex-col m-4 p-4 border-2 shadow-md rounded-lg w-full  md:flex-row md:w-2/3 h-full`}
+      } z-5 flex flex-col m-4 p-4 border-2 shadow-md rounded-lg w-full md:flex-row lg:w-2/3 h-full`}
     >
-      <div className="w-full md:w-1/2">
+      <div className="w-full lg:w-1/2 flex items-center justify-center">
         <img className="rounded-3xl w-full p-6" src={yeom} alt="Ebichu" />
       </div>
-      <div className="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 p-6 text-2xl md:text-lg lg:text-2xl">
+      <div className="flex flex-col justify-center items-center md:items-start w-full lg:w-1/2 p-6 text-2xl lg:text-2xl">
         {member.map((data, index) => (
           <div key={index}>
             <span className="flex flex-row mb-8">Name : {data.name}</span>
