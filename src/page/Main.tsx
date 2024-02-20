@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Main.css";
 
 import Header from "../components/Header";
@@ -12,28 +12,12 @@ import Graph from "../components/Graph";
 import { cardData, dogyeong } from "../dummyData/dummyData";
 
 function Main() {
-  const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
   const [isFlipped, setIsFlipped] = useState(false);
-  const { isDarkMode, toggleDarkMode } = useDarkModeStore();
+  const { isDarkMode } = useDarkModeStore();
 
   const handleClick = () => {
     setIsFlipped(!isFlipped);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-
-      if (scrollPosition > 100) {
-        setBackgroundColor("white");
-      } else {
-        setBackgroundColor("#e0e0e0");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
