@@ -15,11 +15,7 @@ function Main() {
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
   const [isFlipped, setIsFlipped] = useState(false);
   const { isDarkMode, toggleDarkMode } = useDarkModeStore();
-  const [isOn, setIsOn] = useState(false);
-  const toggleSwitch = () => {
-    setIsOn(!isOn);
-    toggleDarkMode();
-  };
+
   const handleClick = () => {
     setIsFlipped(!isFlipped);
   };
