@@ -1,7 +1,7 @@
-import useDarkModeStore from "../zustand/darkModeStore";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const About: React.FC = () => {
-  const { isDarkMode, toggleDarkMode } = useDarkModeStore();
+  const { isDarkMode } = useDarkModeStore();
 
   return (
     <div className="flex flex-col justify-between items-start w-full h-full lg:flex-row lg:w-3/4 mt-60 mb-20">

@@ -6,7 +6,7 @@ import Card from "../components/card";
 import Typewriter from "typewriter-effect";
 import Star from "../components/Star";
 import About from "../components/About";
-import useDarkModeStore from "../zustand/darkModeStore";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 import Profile from "../components/Profile";
 import Graph from "../components/Graph";
 import { cardData, dogyeong } from "../dummyData/dummyData";
@@ -72,7 +72,10 @@ function Main() {
             카드 전체 뒤집기
           </button>
         </div>
-        <div className="flex flex-row flex-wrap z-5 justify-evenly items-center w-2/3">
+        <div
+          data-testid="flipped-card"
+          className="flex flex-row flex-wrap z-5 justify-evenly items-center w-2/3"
+        >
           {cardData.map((data, idx) => (
             <Card
               key={idx}

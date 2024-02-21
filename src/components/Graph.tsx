@@ -9,7 +9,7 @@ import {
 } from "chart.js";
 import { useState } from "react";
 import { Bar } from "react-chartjs-2";
-import useDarkModeStore from "../zustand/darkModeStore";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 ChartJS.register(
   CategoryScale,

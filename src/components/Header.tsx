@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import useDarkModeStore from "../zustand/darkModeStore";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 
 const Header: React.FC = () => {
   const { isDarkMode, toggleDarkMode } = useDarkModeStore();

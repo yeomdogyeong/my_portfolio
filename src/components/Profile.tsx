@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillCopy } from "react-icons/ai";
-import useDarkModeStore from "../zustand/darkModeStore";
+import useDarkModeStore from "../zustand/useDarkModeStore";
 import yeom from "../assets/yeomsia.jpg";
 
 interface Dogyeong {
