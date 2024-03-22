@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./Main.css";
 
 import Header from "../components/Header";
-import Card from "../components/card";
+import Footer from "../components/Footer";
+import Card from "../components/Card";
 import Typewriter from "typewriter-effect";
 import Star from "../components/Star";
 import About from "../components/About";
@@ -101,6 +102,7 @@ function Main() {
         </div>
 
         <Graph />
+        <Footer />
       </div>
     </>
   );

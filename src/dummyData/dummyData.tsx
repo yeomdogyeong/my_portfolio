@@ -6,6 +6,7 @@ import dowajoyak3 from "../assets/dowajoyaksearch.png";
 import signup from "../assets/signup2.png";
 import dowajoyak from "../assets/dowajoyak.png";
 import portfolio from "../assets/portfolio.png";
+import todolist from "../assets/todolist.png";
 
 export const dogyeong = [
   {
@@ -120,6 +121,18 @@ export const cardData = [
       work: "# Work : 야간모드, 카드 뒤집기 등을 구현했습니다.",
     },
     gitLink: "https://my-portfolio-pi-taupe.vercel.app/",
+    demoLink: "https://github.com/yeomdogyeong/my_portfolio",
+  },
+  {
+    frontImage: todolist,
+    frontDescription: "스케줄 관리하기",
+    description: {
+      title: "스케줄 리스트",
+      subtitle: "스케줄리스트를 전역상태로 관리합니다",
+      tech: "# Tech : React,CSS, TailwindCSS, Zustand",
+      work: "# Work : 호버시 안내모달을 볼수 있습니다.todo를 complete, active, all 별로 볼 수 있습니다. 할일을 상세보기로 볼 수 있습니다.",
+    },
+    gitLink: "https://github.com/yeomdogyeong/Todo_myself",
     demoLink: "https://github.com/yeomdogyeong/my_portfolio",
   },
 ];
