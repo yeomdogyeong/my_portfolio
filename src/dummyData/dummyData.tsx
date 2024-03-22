@@ -128,7 +128,7 @@ export const cardData = [
     frontDescription: "스케줄 관리하기",
     description: {
       title: "스케줄 리스트",
-      subtitle: "스케줄리스트를 전역상태로 관리합니다",
+      subtitle: "스케줄리스트를 전역상태로 관리합니다.",
       tech: "# Tech : React,CSS, TailwindCSS, Zustand",
       work: "# Work : 호버시 안내모달을 볼수 있습니다.todo를 complete, active, all 별로 볼 수 있습니다. 할일을 상세보기로 볼 수 있습니다.",
     },
