@@ -94,35 +94,34 @@
   transform: rotateY(180deg);
   background-color: white;
   z-index: 2;
-  padding: 50px;
+  padding: 30px;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  /* overflow: auto; */
+}
+
+.back h1,
+.back h2,
+.back p {
+  margin: 0;
 }
 
 .back h1 {
-  font-size: 48px;
-  margin: 10px;
+  font-size: 35px;
+  margin-bottom: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .back h2 {
   font-weight: 100;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .back p {
   font-weight: lighter;
   font-size: 27px;
-  padding: 15px;
-}
-
-.back .link-container {
-  display: flex;
-  position: absolute;
-  bottom: 0;
 }
 
 .back a {
-  margin-bottom: 50px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 5px;
@@ -131,6 +130,9 @@
   color: #333;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back a:hover {

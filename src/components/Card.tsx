@@ -48,20 +48,22 @@ export const Card: React.FC<CardProps> = ({
           <span>{frontDescription}</span>
           <p>상세정보</p>
         </div>
-        <div className="back m-4 p-4 border-2 border-gray-300 rounded-lg w-1/2 md:w-1/2h-2/3">
+        <div className="flex back m-4 p-4 border-2 border-gray-300 rounded-lg w-1/2 md:w-1/2h-2/3">
           <article>
-            <h1 className="title">{description.title}</h1>
+            <h1 className="title flex justify-between items-start">
+              {description.title}
+              <span className="flex">
+                <a href={gitLink} target="_blank" rel="noopener noreferrer">
+                  git repository
+                </a>
+                <a href={demoLink} target="_blank" rel="noopener noreferrer">
+                  Demo
+                </a>
+              </span>
+            </h1>
             <h2 className="subtitle">- {description.subtitle}</h2>
             <p className="description">{description.tech}</p>
             <p className="description">{description.work}</p>
-            <article className="link-container">
-              <a href={gitLink} target="_blank" rel="noopener noreferrer">
-                git repository
-              </a>
-              <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                Demo
-              </a>
-            </article>
           </article>
         </div>
       </div>

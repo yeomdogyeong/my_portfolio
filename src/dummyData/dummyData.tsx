@@ -24,7 +24,7 @@ export const cardData = [
     frontImage: dowajoyak,
     frontDescription: "도와조약 메인페이지",
     description: {
-      title: "도와조약 메인페이지",
+      title: "도와조약 Main",
       subtitle: "메인 페이지의 레이아웃과 디자인을 구현했습니다.",
       tech: "# Tech : React, CSS, StyledComponent",
       work: "# Work : 헤더,푸터,메인페이지의 레이아웃, css 스타일링",
@@ -49,7 +49,7 @@ export const cardData = [
     frontImage: dowajoyak3,
     frontDescription: "도와조약 의약품 검색",
     description: {
-      title: "도와조약 의약품 검색",
+      title: "도와조약 search",
       subtitle: "도와조약 검색 페이지를 구현했습니다.",
       tech: "# Tech : React, CSS, StyledComponent",
       work: "# Work : css 스타일링",
@@ -130,7 +130,7 @@ export const cardData = [
       title: "스케줄 리스트",
       subtitle: "스케줄리스트를 전역상태로 관리합니다.",
       tech: "# Tech : React,CSS, TailwindCSS, Zustand",
-      work: "# Work : 호버시 안내모달을 볼수 있습니다.todo를 complete, active, all 별로 볼 수 있습니다. 할일을 상세보기로 볼 수 있습니다.",
+      work: "# Work : 호버시 안내모달.할일을 complete, active, all, 상세보기로 볼 수 있습니다. ",
     },
     gitLink: "https://github.com/yeomdogyeong/Todo_myself",
     demoLink: "https://github.com/yeomdogyeong/my_portfolio",
