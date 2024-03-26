@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         intelon: ["intelone-mono-font-family-regular"],
       },
+      fontFamily: {
+        bagel: ["Her-Leeoksun"],
+      },
     },
   },
   plugins: [],

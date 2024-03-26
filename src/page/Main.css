@@ -34,3 +34,11 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Her-Leeoksun";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/Her-Leeoksun.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

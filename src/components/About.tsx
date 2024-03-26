@@ -10,7 +10,7 @@ const About: React.FC = () => {
           isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
         } w-full lg:w-1/2 p-4 flex justify-start text-5xl font-bold sticky top-20`}
       >
-        {`이런걸 좋아합니다 :>`}
+        {`what i Like :>`}
       </div>
       <div className="w-full lg:w-3/4">
         <div className={`p-8 m-4 h-full w-full `}>

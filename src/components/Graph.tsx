@@ -56,7 +56,7 @@ export const Graph: React.FC<{}> = () => {
       x: {
         ticks: {
           font: {
-            size: 25,
+            size: 20,
           },
           color: isDarkMode ? "#e0e0e0" : "gray",
         },
@@ -68,7 +68,7 @@ export const Graph: React.FC<{}> = () => {
       y: {
         ticks: {
           font: {
-            size: 25,
+            size: 15,
           },
           color: isDarkMode ? "#e0e0e0" : "gray",
         },
