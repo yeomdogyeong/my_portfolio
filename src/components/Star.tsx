@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./Star.css";
 import { motion } from "framer-motion";
+import rabbit from "../assets/rabbit.png";
 
 interface StarProps {
   isDarkMode: boolean;
@@ -58,8 +59,10 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
   return (
     <div id="stars" className={isDarkMode ? "dark-mode" : ""}>
       <div ref={starRef} />
+
       <div className={isDarkMode ? "dark-mode circle" : "circle"}>
         <div className="text-box">
+          <img src={rabbit} alt="rabbit" className="rabbit w-[30px]"></img>
           <div className="text">
             <motion.div
               transition={{ delay: 0.7, type: "spring" }}

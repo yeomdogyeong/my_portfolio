@@ -63,16 +63,22 @@ function Main() {
         <div className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}>
           {`<PROJECT />`}
         </div>
-        <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full">
+
+        <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full ">
           <button
-            className={`border-2 p-3 rounded-2xl mt-20 hover:bg-[#7C81AD] ${
-              isDarkMode ? "text-gray-300" : ""
+            className={`border-2 p-3 rounded-2xl mt-20 ${
+              isDarkMode
+                ? "hover:bg-[#7C81AD] text-gray-300"
+                : "hover:bg-[#91c8e4]"
             }`}
             onClick={handleClick}
           >
             카드 전체 뒤집기
           </button>
         </div>
+        <span className="text-md mt-4">
+          전체 화면으로 보면 2개의 카드로 볼 수 있습니다
+        </span>
         <div
           data-testid="flipped-card"
           className="flex flex-row flex-wrap z-5 justify-evenly items-center w-2/3"
