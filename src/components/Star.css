@@ -13,7 +13,7 @@
 #stars {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(#4682a9, #749bc2, #91c8e4, #fff);
+  background: linear-gradient(#4682a9, #749bc2, #91c8e4, #f6f3f3);
   overflow: hidden;
   position: relative;
   animation: fadeIn 3s ease-in-out;

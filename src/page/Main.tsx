@@ -27,7 +27,7 @@ function Main() {
       <div
         id="about"
         className={`flex flex-col justify-center items-center w-full min-h-screen pt-40 ${
-          isDarkMode ? "bg-[#635985]" : "bg-white"
+          isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"
         }`}
       >
         <div className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10">
