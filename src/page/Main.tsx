@@ -77,7 +77,7 @@ function Main() {
           </button>
         </div>
         <span className="text-md mt-4">
-          전체 화면으로 보면 2개의 카드로 볼 수 있습니다
+          가로 1700px 이상일때 2개의 카드로 볼 수 있습니다
         </span>
         <div
           data-testid="flipped-card"

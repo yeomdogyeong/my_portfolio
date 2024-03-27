@@ -82,7 +82,7 @@
 
 .rabbit {
   animation: rotate 10s linear infinite;
-  transform-origin: 50% 365%;
+  transform-origin: 50% 375%;
 }
 
 @keyframes rotate {
