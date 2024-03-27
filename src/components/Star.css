@@ -54,7 +54,10 @@
 }
 
 .text-box {
-  position: relative;
+  position: absolute; /* 절대 위치로 변경 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 부모 요소인 .circle의 가운데 정렬 */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,35 +66,38 @@
 }
 
 .text {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   white-space: nowrap;
   overflow: hidden;
   transition: width 2s;
   z-index: 1;
   padding: 100px;
   font-size: 50px;
-  /* width: 500px; */
 }
 
 .Typewriter__wrapper {
   font-size: 30px;
 }
 
-.rabbit {
-  animation: rotate 10s linear infinite;
-  transform-origin: 50% 375%;
+@keyframes moveRabbit {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(20px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(-20px) rotate(-10deg);
+  }
+  75% {
+    transform: translateX(20px) rotate(10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rabbit {
+  animation: moveRabbit 15s linear infinite;
 }
 @keyframes twinkle {
   0% {

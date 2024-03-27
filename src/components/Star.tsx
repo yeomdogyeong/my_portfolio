@@ -61,8 +61,8 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
       <div ref={starRef} />
 
       <div className={isDarkMode ? "dark-mode circle" : "circle"}>
+        <img src={rabbit} alt="rabbit" className="rabbit w-[110px]"></img>
         <div className="text-box">
-          <img src={rabbit} alt="rabbit" className="rabbit w-[30px]"></img>
           <div className="text">
             <motion.div
               transition={{ delay: 0.7, type: "spring" }}
@@ -71,7 +71,6 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
               className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10 text-3xl"
             >
               <p>Hello World :)</p>
-              <br />
             </motion.div>
           </div>
         </div>
