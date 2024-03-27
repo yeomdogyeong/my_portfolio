@@ -70,9 +70,8 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
               animate={{ scale: 1 }}
               className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10 text-3xl"
             >
-              <p>Hello World!</p>
+              <p>Hello World :)</p>
               <br />
-              <p>I'M DOGYEONG</p>
             </motion.div>
           </div>
         </div>
