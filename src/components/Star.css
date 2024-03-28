@@ -47,6 +47,8 @@
   z-index: 1;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5),
     inset 0px -10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+  animation: moonOpacity 1s infinite;
 }
 
 .circle.dark-mode {
@@ -76,6 +78,25 @@
 
 .Typewriter__wrapper {
   font-size: 30px;
+}
+
+@keyframes moonOpacity {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes moveRabbit {
