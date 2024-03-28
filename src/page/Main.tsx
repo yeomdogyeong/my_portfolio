@@ -11,6 +11,7 @@ import useDarkModeStore from "../zustand/useDarkModeStore";
 import Profile from "../components/Profile";
 import Graph from "../components/Graph";
 import { cardData, dogyeong } from "../dummyData/dummyData";
+import { Bounce } from "react-awesome-reveal";
 
 function Main() {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -31,9 +32,9 @@ function Main() {
         }`}
       >
         <div className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10">
-          <span
+          <Bounce
             className={`mb-10 text-5xl ${isDarkMode ? "text-[#f6d776]" : ""}`}
-          >{`<ABOUT/>`}</span>
+          >{`<ABOUT/>`}</Bounce>
           <div className="flex items-center">
             <Typewriter
               options={{
@@ -60,9 +61,11 @@ function Main() {
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>
-        <div className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}>
+        <Bounce
+          className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}
+        >
           {`<PROJECT />`}
-        </div>
+        </Bounce>
 
         <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full ">
           <button
@@ -100,11 +103,12 @@ function Main() {
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>
-        <div
-          id="skills"
-          className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}
-        >
-          {`<Skills />`}
+        <div id="skills">
+          <Bounce
+            className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}
+          >
+            {`<Skills />`}
+          </Bounce>
         </div>
 
         <Graph />
