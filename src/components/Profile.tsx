@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillCopy } from "react-icons/ai";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 import yeom from "../assets/yeomsia.jpg";
-
+import { Slide } from "react-awesome-reveal";
 interface Dogyeong {
   name: string;
   birth: string;

@@ -12,7 +12,7 @@ import Profile from "../components/Profile";
 import Graph from "../components/Graph";
 import { cardData, dogyeong } from "../dummyData/dummyData";
 import { Bounce } from "react-awesome-reveal";
-
+import { Slide } from "react-awesome-reveal";
 function Main() {
   const [isFlipped, setIsFlipped] = useState(false);
   const { isDarkMode } = useDarkModeStore();
@@ -53,7 +53,10 @@ function Main() {
             <span>를 공부하고 있는</span>
           </div>
         </div>
-        <Profile member={dogyeong} />
+        <Slide className="flex justify-center items-center">
+          <Profile member={dogyeong} />
+        </Slide>
+
         <About />
         <div
           id="project"
