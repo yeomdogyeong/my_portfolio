@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className="z-10 flex justify-between fixed top-0 w-full h-15 ">
+    <div className="z-20 flex justify-between fixed top-0 w-full h-15 ">
       <div
         className={`w-1/3 text-3xl p-6 ${
           isDarkMode ? "bg-[#635985]" : "bg-[#4682a9]"

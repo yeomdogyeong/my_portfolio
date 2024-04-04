@@ -1,4 +1,5 @@
 import useDarkModeStore from "../zustand/useDarkModeStore";
+import { Zoom } from "react-awesome-reveal";
 
 const About: React.FC = () => {
   const { isDarkMode } = useDarkModeStore();
@@ -8,15 +9,18 @@ const About: React.FC = () => {
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
           isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
-        } w-full lg:w-1/2 p-4 flex justify-start text-5xl font-bold sticky top-20`}
+        } w-full lg:w-1/2 p-4 flex flex-row lg:flex-col justify-start text-5xl font-bold sticky top-[84px] z-10`}
       >
-        {`what i Like :>`}
+        <div className="mb-4 lg:mr-4">{`W H A T `}</div>
+        <div className="mb-4 lg:mr-4">{`\u00A0\u00A0\u00A0\u00A0\u00A0I`}</div>
+        <div className="mb-4 lg:mr-4">{`\u00A0L I K E`}</div>
+        <div>{`\u00A0\u00A0\u00A0\u00A0❓`}</div>
       </div>
-      <div className="w-full lg:w-3/4">
+      <div className="w-full lg:w-3/4 border-2 rounded-2xl">
         <div className={`p-8 m-4 h-full w-full `}>
-          <span className="text-4xl font-bold  text-[#FA7070]">
+          <Zoom className="text-4xl font-bold  text-[#FA7070]">
             1. special space made by me :
-          </span>
+          </Zoom>
           <div
             className={`text-2xl mt-16 p-4 ${
               isDarkMode ? "text-gray-200" : "text-gray-700"
@@ -37,9 +41,9 @@ const About: React.FC = () => {
           </div>
         </div>
         <div className={`p-8 m-4 h-full w-full`}>
-          <span className="text-4xl font-bold  text-[#FA7070]">
+          <Zoom className="text-4xl font-bold  text-[#FA7070]">
             2. Practicing challenging mind:
-          </span>
+          </Zoom>
           <div
             className={`text-2xl mt-16 p-4 ${
               isDarkMode ? "text-gray-200" : "text-gray-700"
@@ -59,9 +63,9 @@ const About: React.FC = () => {
           </div>
         </div>
         <div className={`p-8 m-4 h-full w-full `}>
-          <span className="text-4xl font-bold  text-[#FA7070]">
-            3. UI/UX tailored to the user :{" "}
-          </span>
+          <Zoom className="text-4xl font-bold  text-[#FA7070]">
+            3. UI/UX tailored to the user :
+          </Zoom>
           <div
             className={`text-2xl mt-16 p-4 ${
               isDarkMode ? "text-gray-200" : "text-gray-700"
