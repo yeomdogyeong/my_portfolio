@@ -48,7 +48,7 @@
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5),
     inset 0px -10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease-in-out;
-  animation: moonOpacity 1s infinite, moveCircle 15s linear infinite;
+  animation: moonOpacity 1s infinite, shrink 2s linear 1 forwards;
 }
 
 .circle.dark-mode {
@@ -114,6 +114,16 @@
   }
   100% {
     transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
