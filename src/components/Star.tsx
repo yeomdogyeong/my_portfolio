@@ -9,10 +9,23 @@ interface StarProps {
 
 const Star: React.FC<StarProps> = ({ isDarkMode }) => {
   const starRef = useRef<HTMLDivElement | null>(null);
+  const circleRef = useRef<HTMLDivElement | null>(null);
+
   const [coordi, setCoordi] = useState({ x: 0, y: 0 });
+
   const handleMouseMove = (event: any) => {
-    setCoordi({ x: event.clientX, y: event.clientY });
+    const x = event.clientX;
+    const y = event.clientY;
+
+    setCoordi({ x, y });
+
+    if (circleRef.current) {
+      circleRef.current.style.transform = `translate(${
+        x - circleRef.current.offsetWidth / 2
+      }px, ${y - circleRef.current.offsetHeight / 2}px)`;
+    }
   };
+
   const createStars = () => {
     const container = starRef.current;
 
@@ -30,7 +43,7 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
       for (let i = 0; i < 100; i++) {
         let star = document.createElement("div");
         star.className = "star";
-        //별 크기 여기서 조정
+        // 별 크기 여기서 조정
         let size = Math.random() * 2 + 1;
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
@@ -45,9 +58,9 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
   useEffect(() => {
     let resizeTimeout: number;
     const handleResize = () => {
-      //이전에 예약된 함수가 있다면 호출 취소
+      // 이전에 예약된 함수가 있다면 호출 취소
       clearTimeout(resizeTimeout);
-      //0.5초 후에 함수 호출 예약
+      // 0.5초 후에 함수 호출 예약
       resizeTimeout = window.setTimeout(createStars, 500);
       console.log("stars");
     };
@@ -60,10 +73,17 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
   }, []);
 
   return (
-    <div id="stars" className={isDarkMode ? "dark-mode" : ""}>
+    <div
+      id="stars"
+      className={isDarkMode ? "dark-mode" : ""}
+      onMouseMove={handleMouseMove}
+    >
       <div ref={starRef} />
 
-      <div className={isDarkMode ? "dark-mode circle" : "circle"}>
+      <div
+        ref={circleRef}
+        className={isDarkMode ? "dark-mode circle" : "circle"}
+      >
         <img src={rabbit} alt="rabbit" className="rabbit w-[110px]"></img>
         <div className="text-box">
           <div className="text">
@@ -78,13 +98,13 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
           </div>
         </div>
       </div>
-      <div onMouseMove={(e) => handleMouseMove(e)} style={{ height: "100vh" }}>
+      {/* <div style={{ height: "100vh" }}>
         <h1>Mouse Tracker</h1>
         <p>Move your mouse around!</p>
         <p>
           Mouse coordinates: ({coordi.x}, {coordi.y})
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
