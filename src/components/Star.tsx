@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Star.css";
 import { motion } from "framer-motion";
 import rabbit from "../assets/rabbit.png";
@@ -9,7 +9,10 @@ interface StarProps {
 
 const Star: React.FC<StarProps> = ({ isDarkMode }) => {
   const starRef = useRef<HTMLDivElement | null>(null);
-
+  const [coordi, setCoordi] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (event: any) => {
+    setCoordi({ x: event.clientX, y: event.clientY });
+  };
   const createStars = () => {
     const container = starRef.current;
 
@@ -74,6 +77,13 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
             </motion.div>
           </div>
         </div>
+      </div>
+      <div onMouseMove={(e) => handleMouseMove(e)} style={{ height: "100vh" }}>
+        <h1>Mouse Tracker</h1>
+        <p>Move your mouse around!</p>
+        <p>
+          Mouse coordinates: ({coordi.x}, {coordi.y})
+        </p>
       </div>
     </div>
   );
