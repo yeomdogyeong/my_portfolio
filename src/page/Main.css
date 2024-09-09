@@ -12,6 +12,11 @@
   min-width: 500px;
 }
 
+.all-none {
+  color: transparent;
+  background-color: transparent;
+}
+
 body {
   font-family: "Dovemayo_gothic";
 }

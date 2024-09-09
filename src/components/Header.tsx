@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from "react-scroll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import useDarkModeStore from "../zustand/useDarkModeStore";
 import LightModeIcon from "@mui/icons-material/LightMode";
@@ -7,19 +7,41 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 const Header: React.FC = () => {
   const { isDarkMode, toggleDarkMode } = useDarkModeStore();
   const [isOn, setIsOn] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isOnTop, setIsOnTop] = useState<boolean>(true);
+
   const toggleSwitch = () => {
     setIsOn(!isOn);
     toggleDarkMode();
   };
 
-  const spring = {
-    type: "spring",
-    stiffness: 700,
-    damping: 30,
-  };
+  useEffect(() => {
+    // 스크롤 이벤트 핸들러
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY); // 현재 스크롤 위치를 상태에 저장
+    };
 
+    // 이벤트 리스너 등록
+    window.addEventListener("scroll", handleScroll);
+
+    if (scrollPosition < 500) {
+      setIsOnTop(true);
+    } else {
+      setIsOnTop(false);
+    }
+    // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition, isOnTop]); // 빈 배열을 사용하여 한 번만 등록
+
+  //감시하면서 스크롤이벤트가 있을때는 헤더에 배경이 생기게, 아니면 모두 transparent
   return (
-    <div className="z-20 flex justify-between fixed top-0 w-full h-15 ">
+    <div
+      className={`z-20 flex justify-between fixed top-0 w-full h-15 ${
+        !isOnTop && isDarkMode ? "bg-[#635985]" : !isOnTop ? "bg-[#4682a9]" : ""
+      }`}
+    >
       <div className={`w-1/3 text-3xl p-6 `}>
         <span className={`header ${isDarkMode ? "text-white" : ""}`}>
           YDG's PF
