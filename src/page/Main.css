@@ -6,6 +6,10 @@
 .header {
   font-family: "Dovemayo_gothic";
   color: white;
+  white-space: nowrap; /* 줄바꿈 방지 */
+  overflow: hidden; /* 넘치는 텍스트 숨기기 */
+  text-overflow: ellipsis;
+  min-width: 500px;
 }
 
 body {

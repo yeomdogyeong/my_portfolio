@@ -2,7 +2,8 @@ import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import useDarkModeStore from "../zustand/useDarkModeStore";
-
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 const Header: React.FC = () => {
   const { isDarkMode, toggleDarkMode } = useDarkModeStore();
   const [isOn, setIsOn] = useState(false);
@@ -19,19 +20,13 @@ const Header: React.FC = () => {
 
   return (
     <div className="z-20 flex justify-between fixed top-0 w-full h-15 ">
-      <div
-        className={`w-1/3 text-3xl p-6 ${
-          isDarkMode ? "bg-[#635985]" : "bg-[#4682a9]"
-        }`}
-      >
+      <div className={`w-1/3 text-3xl p-6 `}>
         <span className={`header ${isDarkMode ? "text-white" : ""}`}>
           YDG's PF
         </span>
       </div>
       <div
-        className={`header flex text-2xl justify-evenly w-full ${
-          isDarkMode ? "bg-[#635985]" : "bg-[#4682a9]"
-        } p-6`}
+        className={`header flex text-2xl justify-end items-center gap-x-10 w-full p-6`}
       >
         <div className="flex justify-between cursor-pointer">
           <ScrollLink
@@ -63,13 +58,20 @@ const Header: React.FC = () => {
             skills
           </ScrollLink>
         </div>
-        <div
-          className={isDarkMode ? "dark-mode switch" : "switch"}
-          data-ison={isOn}
-          onClick={toggleSwitch}
-        >
-          <motion.div className="handle" layout transition={spring} />
-        </div>
+
+        {isDarkMode ? (
+          <LightModeIcon
+            sx={{ color: "primary.light" }}
+            onClick={toggleSwitch}
+            style={{ cursor: "pointer" }}
+          />
+        ) : (
+          <DarkModeIcon
+            sx={{ color: "primary.dark" }}
+            onClick={toggleSwitch}
+            style={{ cursor: "pointer" }}
+          />
+        )}
       </div>
     </div>
   );
