@@ -32,19 +32,7 @@ export const cardData = [
     gitLink: "https://github.com/codestates-seb/seb43_main_009",
     demoLink: "https://dowajoyak.store/",
   },
-  {
-    frontImage: dowajoyak2,
-    frontDescription: "도와조약 CRUD",
-    description: {
-      title: "도와조약 CRUD",
-      subtitle: "글쓰기, 글 조회 페이지를 구현했습니다. ",
-      tech: "# Tech : React, CSS, Redux, Axios, StyledComponent",
-      work: "# Work : 페이지 제작 ",
-    },
-    gitLink:
-      "https://github.com/codestates-seb/seb43_main_009/blob/main/client/src/page/community/Board.js",
-    demoLink: "https://dowajoyak.store/commu/58",
-  },
+
   {
     frontImage: dowajoyak3,
     frontDescription: "도와조약 의약품 검색",
@@ -98,19 +86,7 @@ export const cardData = [
       "https://github.com/Petching/Petching/blob/dev-FE/client/src/Page/Inquery.tsx",
     demoLink: "https://petching.net/inquery",
   },
-  {
-    frontImage: petching1,
-    frontDescription: "펫칭 문의하기",
-    description: {
-      title: "펫칭 문의하기",
-      subtitle: "회원이 글을 작성할 수 있는 textEditor를 삽입했습니다.",
-      tech: "# Tech : React,CSS",
-      work: "# Work : css 스타일링",
-    },
-    gitLink:
-      "https://github.com/Petching/Petching/blob/dev-FE/client/src/Page/InqueryWrite.tsx",
-    demoLink: "https://petching.net/inquery/write",
-  },
+
   {
     frontImage: portfolio,
     frontDescription: "포트폴리오",
