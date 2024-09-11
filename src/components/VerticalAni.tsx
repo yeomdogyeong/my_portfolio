@@ -6,9 +6,9 @@ export const VerticalAni = () => {
       <div className="animate-slide w-full text-xs sm:text-sm md:text-base lg:text-2xl xl:text-3xl whitespace-nowrap">
         ⭐️ ⭐️ ⭐️
       </div>
-      <div className=" animate-slide2 w-full text-xs sm:text-sm md:text-base lg:text-2xl xl:text-3xl whitespace-nowrap">
+      {/* <div className=" animate-slide2 w-full text-xs sm:text-sm md:text-base lg:text-2xl xl:text-3xl whitespace-nowrap">
         ⭐️ ⭐️ ⭐️
-      </div>
+      </div> */}
       {/* <div className="animate-spin">Demo</div> */}
     </div>
   );

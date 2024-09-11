@@ -5,18 +5,18 @@ const About: React.FC = () => {
   const { isDarkMode } = useDarkModeStore();
 
   return (
-    <div className="flex flex-col justify-between items-start w-full h-full lg:flex-row lg:w-3/4 p-4 mt-60 mb-20">
+    <div className="flex flex-col justify-between items-start w-full h-full lg:flex-row lg:w-3/4 p-4 mt-20 mb-20">
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
           isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
-        } w-full lg:w-1/2 p-4 flex flex-row lg:flex-col justify-start text-3xl font-bold sticky top-[80px] z-10 sm:text-5xl`}
+        } w-full lg:w-1/2 flex flex-row lg:flex-col justify-between text-3xl font-bold sticky top-[80px] z-10 sm:text-5xl mb-10`}
       >
-        <div className="mb-4 lg:mr-4">{`W H A T `}</div>
-        <div className="mb-4 lg:mr-4">{`\u00A0\u00A0\u00A0\u00A0\u00A0I`}</div>
-        <div className="mb-4 lg:mr-4">{`\u00A0L I K E`}</div>
-        <div>{`\u00A0\u00A0\u00A0\u00A0❓`}</div>
+        <div className="mb-4 lg:mr-4">{`W H O `}</div>
+        <div className="mb-4 lg:mr-4">{`A M`}</div>
+        <div className="mb-4 lg:mr-4">{` I `}</div>{" "}
+        <div className="mb-4 lg:mr-4 text-[#FA7070]">{`?`}</div>
       </div>
-      <div className="w-full lg:w-3/4 border-2 rounded-2xl ">
+      <div className="w-full lg:w-full border-2 rounded-2xl ">
         <div className={`p-8 h-full w-full `}>
           <Zoom className="text-4xl font-bold  text-[#FA7070]">
             1. special space made by me :
@@ -32,12 +32,12 @@ const About: React.FC = () => {
             >
               저만의 공간을 구축
             </span>
-            하는 것입니다. 코딩을 처음 시작할때 JS로 만든 계산기가 저의 첫
+            {/* 하는 것입니다. 코딩을 처음 시작할때 JS로 만든 계산기가 저의 첫
             결과물이어서 기억에 남습니다. 이후 프로젝트들에서 리액트를
             처음적용해보았고, 지금 생각해보면 화면을 만들기에 급급해 유지보수에
             좋지 않은 코드를 작성했다고 생각합니다. 그러나 이후 리액트 훅과
             생명주기에 대해 공부해보고 기초를 만들수있던 좋은 경험이었습니다. :){" "}
-            <br />
+            <br /> */}
           </div>
         </div>
         <div className={`p-8 h-full w-full`}>

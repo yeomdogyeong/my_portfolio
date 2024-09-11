@@ -34,8 +34,11 @@ function Main() {
         }`}
       >
         <div className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10">
+          {/* <VerticalAni /> */}
           <Bounce
-            className={`mb-10 text-5xl ${isDarkMode ? "text-[#f6d776]" : ""}`}
+            className={`mb-10 text-5xl ${
+              isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
+            }`}
           >{`<ABOUT/>`}</Bounce>
           <div className="flex items-center">
             <Typewriter
@@ -55,7 +58,7 @@ function Main() {
             <span>를 공부하고 있는</span>
           </div>
         </div>
-        {/* <VerticalAni /> */}
+
         <Slide className="flex justify-center items-center">
           <Profile member={dogyeong} />
         </Slide>
