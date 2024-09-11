@@ -30,7 +30,7 @@ const About: React.FC = () => {
                 isDarkMode ? "text-gray-200" : "text-gray-700"
               } leading-loose`}
             >
-              바로{" "}
+              바로
               <span
                 className={`${
                   isDarkMode ? "text-[#f6d776]" : "text-[#7AA2E3]"
