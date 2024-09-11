@@ -31,7 +31,7 @@ const Profile: React.FC<MyProfile> = ({ member }) => {
         isDarkMode ? "text-gray-200" : ""
       } ${isDarkMode ? "bg-[#4D3C77]" : ""} ${
         isDarkMode ? "border-gray-500" : ""
-      } opacity-80 z-5 flex flex-col m-4 p-4 shadow-lg rounded-lg w-full md:flex-row lg:w-3/4 h-full`}
+      } opacity-85 z-5 flex flex-col p-4 shadow-lg rounded-lg w-full md:flex-row h-full`}
     >
       <div className="w-full lg:w-1/2 flex h-full items-center justify-center p-6">
         <img className="rounded-3xl w-full " src={yeom} alt="Ebichu" />

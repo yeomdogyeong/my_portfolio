@@ -59,9 +59,9 @@ function Main() {
           </div>
         </div>
 
-        <Slide className="flex justify-center items-center">
+        {/* <Slide className="flex justify-center items-center">
           <Profile member={dogyeong} />
-        </Slide>
+        </Slide> */}
 
         <About />
         <div
