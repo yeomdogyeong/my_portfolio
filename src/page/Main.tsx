@@ -55,7 +55,7 @@ function Main() {
             <span>를 공부하고 있는</span>
           </div>
         </div>
-        <VerticalAni />
+        {/* <VerticalAni /> */}
         <Slide className="flex justify-center items-center">
           <Profile member={dogyeong} />
         </Slide>
@@ -63,7 +63,7 @@ function Main() {
         <About />
         <div
           id="project"
-          className={`border-dotted border w-full m-20 ${
+          className={`border-dotted border w-full m-20 p-4 ${
             isDarkMode ? "" : "border-gray-400"
           }`}
         ></div>

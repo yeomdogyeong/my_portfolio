@@ -38,17 +38,17 @@ const Header: React.FC = () => {
   //감시하면서 스크롤이벤트가 있을때는 헤더에 배경이 생기게, 아니면 모두 transparent
   return (
     <div
-      className={`z-20 flex justify-between fixed top-0 w-full h-15 ${
+      className={` sm:text-sm z-20 flex justify-between fixed top-0 w-full h-15 ${
         !isOnTop && isDarkMode ? "bg-[#635985]" : !isOnTop ? "bg-[#4682a9]" : ""
       }`}
     >
-      <div className={`w-1/3 text-3xl p-6 `}>
+      <div className={`w-1/3 text-3xl p-6 hidden sm:block `}>
         <span className={`header ${isDarkMode ? "text-white" : ""}`}>
           YDG's PF
         </span>
       </div>
       <div
-        className={`header flex text-2xl justify-end items-center gap-x-10 w-full p-6`}
+        className={`header flex text-2xl justify-between items-center gap-x-10 w-full p-6 sm:justify-end`}
       >
         <div className="flex justify-between cursor-pointer">
           <ScrollLink

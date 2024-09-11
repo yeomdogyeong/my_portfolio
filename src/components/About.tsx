@@ -5,19 +5,19 @@ const About: React.FC = () => {
   const { isDarkMode } = useDarkModeStore();
 
   return (
-    <div className="flex flex-col justify-between items-start w-full h-full lg:flex-row lg:w-3/4 mt-60 mb-20">
+    <div className="flex flex-col justify-between items-start w-full h-full lg:flex-row lg:w-3/4 p-4 mt-60 mb-20">
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
           isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
-        } w-full lg:w-1/2 p-4 flex flex-row lg:flex-col justify-start text-5xl font-bold sticky top-[84px] z-10`}
+        } w-full lg:w-1/2 p-4 flex flex-row lg:flex-col justify-start text-3xl font-bold sticky top-[80px] z-10 sm:text-5xl`}
       >
         <div className="mb-4 lg:mr-4">{`W H A T `}</div>
         <div className="mb-4 lg:mr-4">{`\u00A0\u00A0\u00A0\u00A0\u00A0I`}</div>
         <div className="mb-4 lg:mr-4">{`\u00A0L I K E`}</div>
         <div>{`\u00A0\u00A0\u00A0\u00A0❓`}</div>
       </div>
-      <div className="w-full lg:w-3/4 border-2 rounded-2xl">
-        <div className={`p-8 m-4 h-full w-full `}>
+      <div className="w-full lg:w-3/4 border-2 rounded-2xl ">
+        <div className={`p-8 h-full w-full `}>
           <Zoom className="text-4xl font-bold  text-[#FA7070]">
             1. special space made by me :
           </Zoom>
@@ -40,7 +40,7 @@ const About: React.FC = () => {
             <br />
           </div>
         </div>
-        <div className={`p-8 m-4 h-full w-full`}>
+        <div className={`p-8 h-full w-full`}>
           <Zoom className="text-4xl font-bold  text-[#FA7070]">
             2. Practicing challenging mind:
           </Zoom>
@@ -62,7 +62,7 @@ const About: React.FC = () => {
             이야 말로 나 자신을 발전시키고 삶의 원동력이 될 수 있다고 느낍니다.
           </div>
         </div>
-        <div className={`p-8 m-4 h-full w-full `}>
+        <div className={`p-8 h-full w-full `}>
           <Zoom className="text-4xl font-bold  text-[#FA7070]">
             3. UI/UX tailored to the user :
           </Zoom>
