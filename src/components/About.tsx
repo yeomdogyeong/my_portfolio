@@ -55,16 +55,12 @@ const About: React.FC = () => {
                 isDarkMode ? "text-gray-200" : "text-gray-700"
               } leading-loose`}
             >
-              대학교에서 배운 전공지식은 기술을 확대하는데 한계가 있다고
-              느꼈습니다. 그래서 저는 코딩으로 새로운 세계를 만들어보고
-              싶었습니다. 하던 전공을 포기하고 전향하는 것은 쉽지 않은
-              선택이었지만,
+              임시 dummy
               <span
                 className={`${
                   isDarkMode ? "text-[#f6d776]" : "text-[#7AA2E3]"
                 }`}
               >
-                {" "}
                 이런 새로운 도전
               </span>
               이야 말로 나 자신을 발전시키고 삶의 원동력이 될 수 있다고
