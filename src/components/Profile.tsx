@@ -36,7 +36,7 @@ const Profile: React.FC<MyProfile> = ({ member }) => {
       <div className="w-full lg:w-1/2 flex h-full items-center justify-center p-6">
         <img className="rounded-3xl w-full " src={yeom} alt="Ebichu" />
       </div>
-      <div className="flex justify-center items-center md:items-start text-2xl lg:text-2xl">
+      <div className="flex justify-center items-center md:items-start text-xl lg:text-xl">
         {member.map((data, index) => (
           <div
             key={index}
