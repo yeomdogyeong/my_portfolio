@@ -56,12 +56,16 @@ const About: React.FC = () => {
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
           isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
-        } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-3xl font-bold sticky top-[80px] z-10 sm:text-5xl mb-10`}
+        } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-xl font-bold sticky top-[85px] z-10 sm:text-3xl mb-10`}
       >
-        <div className="mb-4 lg:mr-4">{`W H O `}</div>
-        <div className="mb-4 lg:mr-4">{`A M`}</div>
-        <div className="mb-4 lg:mr-4">{` I `}</div>{" "}
-        <div className="mb-4 lg:mr-4 text-[#FA7070]">{`?`}</div>
+        <div className="mb-4 lg:mr-4">{`A`}</div>
+        <div className="mb-4 lg:mr-4">{`B`}</div>
+        <div className="mb-4 lg:mr-4">{`O`}</div>
+        <div className="mb-4 lg:mr-4">{`U`}</div>
+        <div className="mb-4 lg:mr-4">{`T`}</div>
+        {/* <div className="mb-4 lg:mr-4">{`A M`}</div>
+        <div className="mb-4 lg:mr-4">{` I `}</div>{" "} 
+        <div className="mb-4 lg:mr-4 text-[#FA7070]">{`?`}</div>*/}
       </div>
       <div className="">
         <Profile member={dogyeong} />

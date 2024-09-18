@@ -43,7 +43,7 @@ export const Card: React.FC<CardProps> = ({
         onClick={handleClick}
         style={{ fontFamily: "Dongle" }}
       >
-        <div className="front m-4 p-4 border-2 border-gray-300 rounded-lg w-1/2 md:w-1/2 h-2/3">
+        <div className="front m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
           <img src={frontImage} alt="front" />
           <span>{frontDescription}</span>
           <p>상세정보</p>
