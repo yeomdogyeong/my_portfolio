@@ -35,11 +35,11 @@ function Main() {
       >
         <div className="font-intelon flex flex-col justify-center items-center h-2/3 mb-10">
           {/* <VerticalAni /> */}
-          <Bounce
+          {/* <Bounce
             className={`mb-10 text-5xl ${
               isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
             }`}
-          >{`<ABOUT/>`}</Bounce>
+          >{`<ABOUT/>`}</Bounce> */}
           <div className="flex items-center">
             <Typewriter
               options={{
@@ -55,7 +55,7 @@ function Main() {
                 wrapperClassName: "Typewriter__wrapper",
               }}
             />
-            <span>를 공부하고 있는</span>
+            {/* <span>를 공부하고 있는</span> */}
           </div>
         </div>
 

@@ -27,11 +27,11 @@ const Profile: React.FC<MyProfile> = ({ member }) => {
 
   return (
     <div
-      className={`${isDarkMode ? "bg-[#7C81AD]" : "bg-[#7fb0c5]"} ${
+      className={`${isDarkMode ? "br-[#7C81AD]" : "br-[#7fb0c5]"} ${
         isDarkMode ? "text-gray-200" : ""
-      } ${isDarkMode ? "bg-[#4D3C77]" : ""} ${
+      } ${isDarkMode ? "br-[#4D3C77]" : ""} ${
         isDarkMode ? "border-gray-500" : ""
-      } opacity-85 z-5 flex flex-col p-4 shadow-lg rounded-lg w-full md:flex-row h-full`}
+      } opacity-85 z-5 flex flex-col p-4 rounded-lg w-full md:flex-row h-full`}
     >
       <div className="w-full lg:w-1/2 flex h-full items-center justify-center p-6">
         <img className="rounded-3xl w-full " src={yeom} alt="Ebichu" />

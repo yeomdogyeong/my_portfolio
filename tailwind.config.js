@@ -40,6 +40,8 @@ module.exports = {
       bermuda: "#78dcca",
       light: "#4682a9",
       dark: "#635985",
+      "dark-yellow": "#f6d776",
+      "light-theme": "#73777B",
     },
   },
   plugins: [],
