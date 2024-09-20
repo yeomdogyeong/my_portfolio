@@ -39,9 +39,11 @@ export const Card: React.FC<CardProps> = ({
     <>
       <div
         id="project"
-        className={`card ${localFlipped ? "flipped" : ""}`}
+        className={`card ${
+          localFlipped ? "flipped" : ""
+        } flex items-end justify-end`}
         onClick={handleClick}
-        style={{ fontFamily: "Dongle" }}
+        // style={{ fontFamily: "Dongle" }}
       >
         <div className="front flex items-center justify-center m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
           <img src={frontImage} alt="front" className="rounded-lg" />
@@ -49,7 +51,7 @@ export const Card: React.FC<CardProps> = ({
           <p>상세정보</p>
         </div>
         <div className="flex back m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
-          <article>
+          <article className="w-full">
             <h1 className="flex justify-between">
               {description.title}
               <span className="flex ml-4">

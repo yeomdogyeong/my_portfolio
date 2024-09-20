@@ -45,7 +45,7 @@ export const Project = () => {
             </button>
           </div> */}
 
-          <div className="w-full flex flex-row flex-wrap z-5 justify-center items-center">
+          <div className="w-full flex flex-row flex-wrap z-5 justify-center  items-center gap-4">
             {cardData.map((data, idx) => (
               <Card
                 key={idx}
