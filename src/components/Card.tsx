@@ -7,7 +7,7 @@ interface CardProps {
   frontDescription: string;
   description: Description;
   gitLink: string;
-  demoLink: string;
+  demoLink?: string;
 }
 
 interface Description {
@@ -43,14 +43,14 @@ export const Card: React.FC<CardProps> = ({
         onClick={handleClick}
         style={{ fontFamily: "Dongle" }}
       >
-        <div className="front m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
-          <img src={frontImage} alt="front" />
+        <div className="front flex items-center justify-center m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
+          <img src={frontImage} alt="front" className="rounded-lg" />
           <span>{frontDescription}</span>
           <p>상세정보</p>
         </div>
-        <div className="flex back m-4 p-4 border-2 border-gray-300 rounded-lg w-1/2 md:w-1/2 h-2/3">
+        <div className="flex back m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
           <article>
-            <h1 className="flex">
+            <h1 className="flex justify-between">
               {description.title}
               <span className="flex ml-4">
                 <a href={gitLink} target="_blank" rel="noopener noreferrer">

@@ -32,7 +32,7 @@ export const Project = () => {
           <div className="mb-4 lg:mr-4">{`T`}</div>
         </div>
         <div className="w-full flex-col items-center justify-center">
-          <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full">
+          {/* <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full">
             <button
               className={`-2 p-3 rounded-2xl mt-20 ${
                 isDarkMode
@@ -43,9 +43,9 @@ export const Project = () => {
             >
               카드 전체 뒤집기
             </button>
-          </div>
+          </div> */}
 
-          <div className="w-full flex flex-row flex-wrap z-5 justify-evenly items-center ">
+          <div className="w-full flex flex-row flex-wrap z-5 justify-center items-center">
             {cardData.map((data, idx) => (
               <Card
                 key={idx}

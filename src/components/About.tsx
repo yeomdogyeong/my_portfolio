@@ -46,7 +46,7 @@ const About: React.FC = () => {
     },
     {
       id: 2,
-      period: "23.05 - 23.09",
+      period: "24.05 - 24.09",
       description: "(주)세인티 재직",
     },
   ];

@@ -3,6 +3,7 @@ import dowajoyak from "../assets/dowajoyak.png";
 import portfolio from "../assets/portfolio.png";
 import gaezzange from "../assets/gaezzange.png";
 import oneului from "../assets/oneului.png";
+import sainti from "../assets/sainti.png";
 export const dogyeong = [
   {
     name: "염도경",
@@ -19,32 +20,43 @@ export const cardData = [
     frontImage: gaezzange,
     frontDescription: "개짱이",
     description: {
-      title: "도와조약 Main",
-      subtitle: "메인 페이지의, 검색페이지의 디자인 및 기능을 구현했습니다.",
-      tech: "# Tech : React, CSS, StyledComponent",
-      work: "# Work : 헤더,푸터,메인페이지의 레이아웃, css 스타일링",
+      title: "개짱이",
+      subtitle:
+        "유저가 루틴 등록, 생성을 통해 개미 vs 배짱이인지를 확인하고 유저의 성향과의 반대 성향의 루틴을 실행하도록하여 라이프 밸런스를 맞추도록 고안한 애플리케이션입니다.",
+      tech: "# Tech : Next.js, React-Query, TailwindCss, Zustand, TypeScript",
+      work: "# Work : 초기화면부터 온보딩, 설문, 로그인, 프로필 설정, 메인 페이지를 제작했습니다.",
     },
-    gitLink: "https://github.com/codestates-seb/seb43_main_009",
-    demoLink: "https://dowajoyak.store/",
+    gitLink: "https://github.com/yeomdogyeong/GaejjangE",
+    demoLink: "https://gaejjange.swygbro.com",
+  },
+  {
+    frontImage: sainti,
+    frontDescription: "세인티",
+    description: {
+      title: "세인티",
+      subtitle: "재직 중 자사 홈페이지의 리모델링을 맡았습니다.",
+      tech: "# Tech : Vue.js, Pinia, Vuetify",
+      work: "# Work : 리디자인 및 퍼블리싱, 기능 구현 및 추가 유지보수",
+    },
+    gitLink: "https://github.com/OneulUi/client",
   },
   {
     frontImage: oneului,
     frontDescription: "오늘의",
     description: {
-      title: "도와조약 Main",
-      subtitle: "메인 페이지의, 검색페이지의 디자인 및 기능을 구현했습니다.",
-      tech: "# Tech : React, CSS, StyledComponent",
-      work: "# Work : 헤더,푸터,메인페이지의 레이아웃, css 스타일링",
+      title: "오늘의",
+      subtitle:
+        "온도에 따른 날씨를 기록하고 유저의 ootd를 기록으로 남겨 날씨에 따른 옷차림을 구경할 수 있게 만든 웹애플리케이션입니다.",
+      tech: "# Tech : Next.js, TailwindCss, TypeScript, GitHub Actions",
+      work: "# Work : 이미지 업로드 및 저장, 커뮤니티의 CRUD",
     },
-    gitLink: "https://github.com/codestates-seb/seb43_main_009",
-    demoLink: "https://dowajoyak.store/",
+    gitLink: "https://github.com/OneulUi/client",
   },
-
   {
     frontImage: dowajoyak,
     frontDescription: "도와조약",
     description: {
-      title: "도와조약 Main",
+      title: "도와조약",
       subtitle: "메인 페이지의, 검색페이지의 디자인 및 기능을 구현했습니다.",
       tech: "# Tech : React, CSS, StyledComponent",
       work: "# Work : 헤더,푸터,메인페이지의 레이아웃, css 스타일링",
