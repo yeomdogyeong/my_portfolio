@@ -31,14 +31,14 @@ export const cardData = [
   },
   {
     frontImage: sainti,
-    frontDescription: "세인티",
+    frontDescription: "자사 홈페이지",
     description: {
-      title: "세인티",
+      title: "자사 홈페이지",
       subtitle: "재직 중 자사 홈페이지의 리모델링을 맡았습니다.",
       tech: "# Tech : Vue.js, Pinia, Vuetify",
       work: "# Work : 리디자인 및 퍼블리싱, 기능 구현 및 추가 유지보수",
     },
-    gitLink: "https://github.com/OneulUi/client",
+    demoLink: "https://sainti.co.kr",
   },
   {
     frontImage: oneului,

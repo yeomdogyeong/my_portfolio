@@ -120,7 +120,9 @@ const About: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className={` h-full w-full hover:shadow-lg text-center mt-10`}>
+          <div
+            className={` h-full w-full hover:shadow-lg text-center  mt-6 pr-4 pb-4`}
+          >
             <div
               className={`text-3xl font-bold ${
                 isDarkMode ? "text-[#A594F9]" : "text-[#454545]"
@@ -150,7 +152,9 @@ const About: React.FC = () => {
               발전하는
             </div>
           </div>
-          <div className={` h-full w-full hover:shadow-lg text-right mt-10`}>
+          <div
+            className={` h-full w-full hover:shadow-lg text-right mt-6 pr-4 pb-4`}
+          >
             <Zoom
               className={`text-3xl font-bold ${
                 isDarkMode ? "text-[#A594F9]" : "text-[#454545]"
