@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import useDarkModeStore from "../zustand/useDarkModeStore";
-export const Skills = () => {
+export const Connect = () => {
   const form = useRef<HTMLFormElement | null>(null);
   const { isDarkMode } = useDarkModeStore();
   const sendEmail = (e: React.FormEvent) => {
@@ -15,9 +15,11 @@ export const Skills = () => {
         .then(
           () => {
             console.log("SUCCESS!");
+            alert("전송 성공 :)");
           },
           (error) => {
             console.log("FAILED...", error.text);
+            alert("전송 실패 :(");
           }
         );
     }
@@ -29,7 +31,7 @@ export const Skills = () => {
     >
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
-          isDarkMode ? "text-[#f6d776]" : "text-[#6A9AB0]"
+          isDarkMode ? "text-[#F79F24]" : "text-[#6A9AB0]"
         } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-lg font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
       >
         <div className="">{`C`}</div>

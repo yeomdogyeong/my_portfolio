@@ -23,7 +23,7 @@ export const Project = () => {
       >
         <div
           className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
-            isDarkMode ? "text-[#f6d776]" : "text-[#6A9AB0]"
+            isDarkMode ? "text-[#F79F24]" : "text-[#6A9AB0]"
           } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-md font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
         >
           <div className="">{`P`}</div>
