@@ -41,7 +41,7 @@ export const Card: React.FC<CardProps> = ({
         id="project"
         className={`card ${
           localFlipped ? "flipped" : ""
-        } flex items-end justify-end`}
+        } flex items-end justify-center`}
         onClick={handleClick}
         // style={{ fontFamily: "Dongle" }}
       >

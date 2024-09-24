@@ -56,13 +56,13 @@ const About: React.FC = () => {
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
           isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
-        } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-xl font-bold sticky top-[85px] z-10 sm:text-3xl mb-10`}
+        } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-md font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
       >
-        <div className="mb-4 lg:mr-4">{`A`}</div>
-        <div className="mb-4 lg:mr-4">{`B`}</div>
-        <div className="mb-4 lg:mr-4">{`O`}</div>
-        <div className="mb-4 lg:mr-4">{`U`}</div>
-        <div className="mb-4 lg:mr-4">{`T`}</div>
+        <div className="">{`A`}</div>
+        <div className="">{`B`}</div>
+        <div className="">{`O`}</div>
+        <div className="">{`U`}</div>
+        <div className="">{`T`}</div>
         {/* <div className="mb-4 lg:mr-4">{`A M`}</div>
         <div className="mb-4 lg:mr-4">{` I `}</div>{" "} 
         <div className="mb-4 lg:mr-4 text-[#FA7070]">{`?`}</div>*/}

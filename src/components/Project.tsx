@@ -21,15 +21,15 @@ export const Project = () => {
         <div
           className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
             isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
-          } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-xl font-bold sticky top-[85px] z-10 sm:text-3xl mb-10`}
+          } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-md font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
         >
-          <div className="mb-4 lg:mr-4">{`P`}</div>
-          <div className="mb-4 lg:mr-4">{`R`}</div>
-          <div className="mb-4 lg:mr-4">{`O`}</div>
-          <div className="mb-4 lg:mr-4">{`J`}</div>
-          <div className="mb-4 lg:mr-4">{`E`}</div>
-          <div className="mb-4 lg:mr-4">{`C`}</div>
-          <div className="mb-4 lg:mr-4">{`T`}</div>
+          <div className="">{`P`}</div>
+          <div className="">{`R`}</div>
+          <div className="">{`O`}</div>
+          <div className="">{`J`}</div>
+          <div className="">{`E`}</div>
+          <div className="">{`C`}</div>
+          <div className="">{`T`}</div>
         </div>
         <div className="w-full flex-col items-center justify-center">
           {/* <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full">
