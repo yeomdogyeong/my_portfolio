@@ -38,7 +38,6 @@ export const Card: React.FC<CardProps> = ({
   return (
     <>
       <div
-        id="project"
         className={`card ${
           localFlipped ? "flipped" : ""
         } flex items-end justify-center`}

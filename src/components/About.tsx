@@ -55,7 +55,7 @@ const About: React.FC = () => {
       {/* whoamI */}
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
-          isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
+          isDarkMode ? "text-[#f6d776]" : "text-[#6A9AB0]"
         } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-md font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
       >
         <div className="">{`A`}</div>
@@ -72,7 +72,7 @@ const About: React.FC = () => {
         <div className="w-full lg:w-full rounded-2xl mt-10">
           <div className={` h-full w-full  `}>
             <Zoom
-              className={`text-3xl font-bold ${
+              className={`text-3xl font-bold pl-2 ${
                 isDarkMode ? "text-[#A594F9]" : "text-[#454545]"
               }`}
             >
@@ -97,7 +97,7 @@ const About: React.FC = () => {
           </div>
           <div className={` h-full w-full `}>
             <Zoom
-              className={`text-3xl font-bold ${
+              className={`text-3xl font-bold pl-2 ${
                 isDarkMode ? "text-[#A594F9]" : "text-[#454545]"
               }`}
             >

@@ -39,7 +39,7 @@ const Header: React.FC = () => {
   return (
     <div
       className={` sm:text-sm z-20 flex justify-between fixed top-0 w-full h-15 ${
-        !isOnTop && isDarkMode ? "bg-[#635985]" : !isOnTop ? "bg-[#4682a9]" : ""
+        !isOnTop && isDarkMode ? "bg-[#635985]" : !isOnTop ? "bg-[#90AACB]" : ""
       }`}
     >
       <div className={`w-1/3 text-3xl p-6 hidden sm:block `}>
@@ -72,12 +72,12 @@ const Header: React.FC = () => {
         </div>
         <div className="flex justify-between cursor-pointer">
           <ScrollLink
-            to="skills"
+            to="connect"
             smooth={true}
             duration={700}
             className=" hover:text-yellow-400"
           >
-            skills
+            connect
           </ScrollLink>
         </div>
 

@@ -5,8 +5,8 @@ const Footer = () => {
 
   return (
     <div
-      className={`z-10 flex-col items-center w-full h-24  ${
-        isDarkMode ? "bg-[#443c68]" : "bg-[#91c8e4]"
+      className={`z-10 flex-col items-center w-full h-20  ${
+        isDarkMode ? "bg-[#6C567B]" : "bg-[#90AACB]"
       }  text-white`}
     >
       <div className="flex items-center justify-center sm:justify-end sm:pr-4 h-full w-full">

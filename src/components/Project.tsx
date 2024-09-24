@@ -17,10 +17,13 @@ export const Project = () => {
       >
         {`<PROJECT />`}
       </Bounce> */}
-      <div className="flex justify-between items-start w-full h-full flex-row lg:w-3/4 p-2 lg:p-0 mb-20 gap-2">
+      <div
+        className="flex justify-between items-start w-full h-full flex-row lg:w-3/4 p-2 lg:p-0 mb-20 gap-2"
+        id="project"
+      >
         <div
           className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
-            isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
+            isDarkMode ? "text-[#f6d776]" : "text-[#6A9AB0]"
           } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-md font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
         >
           <div className="">{`P`}</div>
@@ -31,7 +34,7 @@ export const Project = () => {
           <div className="">{`C`}</div>
           <div className="">{`T`}</div>
         </div>
-        <div className="w-full flex-col items-center justify-center">
+        <div className="w-full flex-col items-center justify-center ">
           {/* <div className="justify-center xl:justify-end xl:w-2/3 flex items-center w-full">
             <button
               className={`-2 p-3 rounded-2xl mt-20 ${

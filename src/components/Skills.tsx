@@ -23,10 +23,13 @@ export const Skills = () => {
     }
   };
   return (
-    <div className="flex items-start w-full h-full flex-row lg:w-3/4 p-2 lg:p-0 mb-20 gap-2">
+    <div
+      id="connect"
+      className="flex items-start w-full h-full flex-row lg:w-3/4 p-2 lg:p-0 mb-20 gap-2"
+    >
       <div
         className={`${isDarkMode ? "bg-[#635985]" : "bg-[#f6f3f3]"} ${
-          isDarkMode ? "text-[#f6d776]" : "text-[#91c8e4]"
+          isDarkMode ? "text-[#f6d776]" : "text-[#6A9AB0]"
         } max-w-10 lg:w-1/2 flex-row lg:flex-col justify-between text-lg font-bold sticky top-[85px] z-10 sm:text-xl mb-10`}
       >
         <div className="">{`C`}</div>
@@ -51,7 +54,7 @@ export const Skills = () => {
             </h1>
           </div>
           <div className="flex items-center w-full px-4">
-            <label className="w-1/4">Your Name:</label>
+            <label className="w-1/4">보내시는분:</label>
             <input
               type="text"
               name="user_name"
@@ -60,7 +63,7 @@ export const Skills = () => {
           </div>
 
           <div className="flex items-center w-full px-4">
-            <label className="w-1/4">Email:</label>
+            <label className="w-1/4">이메일:</label>
             <input
               type="email"
               name="user_email"
@@ -69,7 +72,7 @@ export const Skills = () => {
           </div>
 
           <div className="flex items-center w-full px-4">
-            <label className="w-1/4">Message:</label>
+            <label className="w-1/4">내용:</label>
             <textarea
               name="message"
               className="rounded-md w-3/4 p-1 outline-none"
@@ -79,8 +82,8 @@ export const Skills = () => {
           <div className="w-full flex items-end justify-end px-4">
             <input
               type="submit"
-              value="Send"
-              className="rounded-lg p-1 cursor-pointer"
+              value="보내기"
+              className="rounded-lg px-3 py-1 border-none border-2 hover:bg-[#EEEEEE] cursor-pointer"
             />
           </div>
         </div>
