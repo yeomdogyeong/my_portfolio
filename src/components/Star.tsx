@@ -84,7 +84,7 @@ const Star: React.FC<StarProps> = ({ isDarkMode }) => {
         ref={circleRef}
         className={isDarkMode ? "dark-mode circle" : "circle"}
       >
-        <img src={rabbit} alt="rabbit" className="rabbit w-[110px]"></img>
+        {/* <img src={rabbit} alt="rabbit" className="rabbit w-[110px]"></img> */}
         <div className="text-box">
           <div className="text">
             <motion.div

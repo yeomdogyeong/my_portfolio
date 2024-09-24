@@ -50,16 +50,24 @@ export const Card: React.FC<CardProps> = ({
           <span>{frontDescription}</span>
           <p>상세정보</p>
         </div>
-        <div className="flex-col back m-4 p-4 border-2 border-gray-300 rounded-lg w-1/2 md:w-1/2 h-2/3">
+        <div className="flex-col back m-4 p-4 rounded-lg w-1/2 md:w-1/2 h-2/3">
           <h1 className="flex justify-between">
             {description.title}
             <span className="flex ">
-              <a href={gitLink} target="_blank" rel="noopener noreferrer">
-                git repository
-              </a>
-              <a href={demoLink} target="_blank" rel="noopener noreferrer">
-                Demo
-              </a>
+              {gitLink ? (
+                <a href={gitLink} target="_blank" rel="noopener noreferrer">
+                  Git repo
+                </a>
+              ) : (
+                <p></p>
+              )}
+              {demoLink ? (
+                <a href={demoLink} target="_blank" rel="noopener noreferrer">
+                  Demo
+                </a>
+              ) : (
+                <p></p>
+              )}
             </span>
           </h1>
           <h2 className="subtitle">- {description.subtitle}</h2>
