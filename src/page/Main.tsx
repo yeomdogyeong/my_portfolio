@@ -15,6 +15,7 @@ import { Bounce } from "react-awesome-reveal";
 import { Slide } from "react-awesome-reveal";
 import { VerticalAni } from "../components/VerticalAni";
 import { Project } from "../components/Project";
+import { Skills } from "../components/Skills";
 function Main() {
   const { isDarkMode } = useDarkModeStore();
 
@@ -67,16 +68,16 @@ function Main() {
           }`}
         ></div> */}
         <Project />
-        <div id="skills">
+        {/* <div id="skills">
           <Bounce
             className={`${isDarkMode ? "text-[#f6d776]" : ""} text-5xl mt-20`}
           >
-            {`<Skills />`}
+            {`Connect`}
           </Bounce>
-        </div>
+        </div> */}
 
-        <Graph />
-
+        {/* <Graph /> */}
+        <Skills />
         <Footer />
       </div>
     </>
