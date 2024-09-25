@@ -85,7 +85,7 @@ export const cardData = [
       title: "포트폴리오",
       subtitle: "포트폴리오 제작",
       tech: "# Tech : React,CSS, TailwindCSS, Zustand",
-      work: "# Work : 야간모드, 카드 뒤집기 등을 구현했습니다.",
+      work: "# Work : CRA로 시작해 직접 만든 포트폴리오입니다.",
     },
     gitLink: "https://my-portfolio-pi-taupe.vercel.app/",
     demoLink: "https://github.com/yeomdogyeong/my_portfolio",
