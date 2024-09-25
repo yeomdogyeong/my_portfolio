@@ -38,7 +38,7 @@ const Header: React.FC = () => {
   //감시하면서 스크롤이벤트가 있을때는 헤더에 배경이 생기게, 아니면 모두 transparent
   return (
     <div
-      className={` sm:text-sm z-20 flex justify-between fixed top-0 w-full h-15 ${
+      className={` sm:text-sm z-20 flex justify-between fixed top-0 w-full h-[80px] ${
         !isOnTop && isDarkMode ? "bg-[#635985]" : !isOnTop ? "bg-[#90AACB]" : ""
       }`}
     >

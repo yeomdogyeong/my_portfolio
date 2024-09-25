@@ -31,16 +31,16 @@ const Profile: React.FC<MyProfile> = ({ member }) => {
         isDarkMode ? "text-gray-200" : ""
       } ${isDarkMode ? "br-[#4D3C77]" : ""} ${
         isDarkMode ? "border-gray-500" : ""
-      } opacity-85 z-5 flex flex-col p-4 rounded-lg w-full md:flex-row h-full`}
+      } opacity-85 z-5 flex flex-col p-4 rounded-lg w-full md:flex-row h-1/2`}
     >
-      <div className="w-full lg:w-1/2 flex h-full items-center justify-center p-6">
-        <img className="rounded-3xl w-full " src={yeom} alt="Ebichu" />
+      <div className="w-full lg:w-2/5 flex h-full items-center justify-center p-6">
+        <img className="rounded-xl w-full " src={yeom} alt="Ebichu" />
       </div>
       <div className="flex justify-center items-center md:items-start text-xl lg:text-xl">
         {member.map((data, index) => (
           <div
             key={index}
-            className="flex flex-col p-6 gap-4 h-full w-full justify-between"
+            className="flex flex-col p-6 gap-4 h-full w-full justify-center"
           >
             <div className="flex gap-2 items-center">
               {isDarkMode ? (
