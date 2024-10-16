@@ -17,6 +17,7 @@
   overflow: hidden;
   position: relative;
   animation: fadeIn 3s ease-in-out;
+  background-size: cover;
 }
 
 #stars.dark-mode {
