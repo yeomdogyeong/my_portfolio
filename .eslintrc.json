@@ -1,10 +1,10 @@
 {
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  //   "plugins": ["@typescript-eslint/eslint-plugin"],
+  //   "extends": [
+  //     "plugin:react/recommended",
+  //     "plugin:prettier/recommended",
+  //     "plugin:@typescript-eslint/recommended"
+  //   ],
+  "plugins": ["@typescript-eslint/eslint-plugin"],
   "rules": {
     "no-unused-vars": "off"
   }
